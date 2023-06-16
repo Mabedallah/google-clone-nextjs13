@@ -20,7 +20,7 @@ export default function HomeSearch() {
       .then(res=>res.json()).then(data=>data[0]);
       console.log(response);
       if(!response.trim()) return;
-        router.push(`/search/web?searchTerm=${response}`);
+        router.push(`/search/image?searchTerm=${response}`);
         setRandomLoading(false);
     }
   return (
